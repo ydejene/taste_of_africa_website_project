@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Taste of Africa celebrates the vibrant food cultures, signature recipes, and living culinary heritage across West, North, East Africa and the Indian Ocean Islands.">
+  <title>Taste of Africa — Culinary Heritage &amp; Authentic Recipes</title>
+
+  <!-- Google Fonts: Playfair Display (Headings) & DM Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,500..800;1,500..800&display=swap" rel="stylesheet">
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Shared JavaScript (deferred for performance) -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Keyboard Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Taste of Africa Home">
+        <img src="assets/icons/logo.svg" alt="Taste of Africa" class="brand-logo" width="180" height="42">
+      </a>
+
+      <!-- Mobile Navigation Toggle -->
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav id="primary-nav" class="primary-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="pages/recipes/index.html" class="nav-link">Recipes</a></li>
+          <li><a href="#regions" class="nav-link">Regions</a></li>
+          <li><a href="pages/about.html" class="nav-link">About</a></li>
+          <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Landmark -->
+  <main id="main-content" class="site-main">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-background">
+        <img src="assets/images/hero-african-cuisine.jpg" alt="Richly spread table showcasing authentic African dishes, stews, grains, and flatbreads">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow">Tradition &bull; Flavor &bull; Community</span>
+        <h1 id="hero-title">A Culinary Journey Across the Continent</h1>
+        <p>
+          Discover the authentic recipes, staple ingredients, and living traditions that define Africa’s rich culinary landscape—from slow-simmered regional stews to fragrant spiced grains.
+        </p>
+        <div class="hero-actions">
+          <a href="pages/recipes/index.html" class="btn btn-primary">Explore Recipes</a>
+          <a href="#regions" class="btn btn-outline-sand">Discover Regions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Dishes Section -->
+    <section class="section" id="featured-dishes" aria-labelledby="featured-dishes-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow">Signature Dishes</span>
+          <h2 id="featured-dishes-title">Featured Heritage Recipes</h2>
+          <p>Carefully selected dishes showcasing the depth, aroma, and communal warmth of African home cooking.</p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Dish 1: Nigerian Jollof Rice -->
+          <article class="card featured-dish-card">
+            <figure>
+              <div class="featured-dish-image-wrapper">
+                <span class="badge badge-sand dish-origin-badge">West Africa</span>
+                <img src="assets/images/jollof-rice.jpg" alt="Nigerian Jollof Rice served with seasoned vegetables and rich tomato reduction" loading="lazy">
+              </div>
+              <figcaption>
+                <h3><a href="pages/recipes/jollof-rice.html">Nigerian Jollof Rice</a></h3>
+                <p>Fragrant long-grain parboiled rice slow-simmered in a smoky, spiced reduction of plum tomatoes, sweet bell peppers, onions, scotch bonnet peppers, and dried thyme.</p>
+                <a href="pages/recipes/jollof-rice.html" class="btn-link" aria-label="View Nigerian Jollof Rice recipe">View Recipe</a>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Dish 2: Sudanese Ful Medames -->
+          <article class="card featured-dish-card">
+            <figure>
+              <div class="featured-dish-image-wrapper">
+                <span class="badge badge-sand dish-origin-badge">North &amp; Northeast</span>
+                <img src="assets/images/ful-medames.jpg" alt="Sudanese Ful Medames gently mashed fava beans garnished with boiled eggs, olive oil, and herbs" loading="lazy">
+              </div>
+              <figcaption>
+                <h3><a href="pages/recipes/ful-medames.html">Sudanese Ful Medames</a></h3>
+                <p>Tender fava beans simmered low and slow, lightly crushed with roasted ground cumin, and topped with golden sesame oil, crumbled gibna bayda cheese, and fresh garden herbs.</p>
+                <a href="pages/recipes/ful-medames.html" class="btn-link" aria-label="View Sudanese Ful Medames recipe">View Recipe</a>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Dish 3: Ethiopian Doro Wat -->
+          <article class="card featured-dish-card">
+            <figure>
+              <div class="featured-dish-image-wrapper">
+                <span class="badge badge-sand dish-origin-badge">East Africa</span>
+                <img src="assets/images/doro-wat.jpg" alt="Richly colored Ethiopian Doro Wat chicken stew with hard-boiled eggs in dark berbere sauce" loading="lazy">
+              </div>
+              <figcaption>
+                <h3><a href="pages/recipes/doro-wat.html">Ethiopian Doro Wat</a></h3>
+                <p>Celebrated Ethiopian spicy chicken stew slowly braised with sweet caramelized red onions, pungent berbere spice blend, fragrant niter kibbeh spiced clarified butter, and boiled eggs.</p>
+                <a href="pages/recipes/doro-wat.html" class="btn-link" aria-label="View Ethiopian Doro Wat recipe">View Recipe</a>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Dish 4: Malagasy Romazava -->
+          <article class="card featured-dish-card">
+            <figure>
+              <div class="featured-dish-image-wrapper">
+                <span class="badge badge-sand dish-origin-badge">Indian Ocean</span>
+                <img src="assets/images/romazava.jpg" alt="Malagasy Romazava beef and leafy green broth stew with indigenous herbs" loading="lazy">
+              </div>
+              <figcaption>
+                <h3><a href="pages/recipes/romazava.html">Malagasy Romazava</a></h3>
+                <p>Madagascar’s revered national stew marrying tender braised beef with leafy anamalao greens that deliver a distinctive, pleasant herbal sensation on the palate.</p>
+                <a href="pages/recipes/romazava.html" class="btn-link" aria-label="View Malagasy Romazava recipe">View Recipe</a>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+
+        <div class="featured-dishes-cta">
+          <a href="pages/recipes/index.html" class="btn btn-secondary">View Complete Recipe Collection &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Culinary Regions Section -->
+    <section class="section section-warm" id="regions" aria-labelledby="regions-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Geography &bull; Culture</span>
+          <h2 id="regions-title">Explore Culinary Regions</h2>
+          <p>Discover how climate, ancient trade routes, and indigenous crops gave rise to three extraordinary culinary traditions.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Region 1: West Africa -->
+          <article class="region-card">
+            <div class="region-card-image">
+              <img src="assets/images/west-africa.jpg" alt="Vibrant bustling West African open-air spice and food market" loading="lazy">
+            </div>
+            <div class="region-card-content">
+              <span class="badge badge-terracotta dish-origin-badge">Regional Spotlight</span>
+              <h3>West Africa</h3>
+              <p>Known for bold aromatics, fiery scotch bonnet peppers, fermented seasoning pastes like iru and dawadawa, and iconic tomato-rich celebration stews paired with pounded yam, fufu, and jollof rice.</p>
+              <div class="region-staples">
+                <strong>Staples:</strong> Yam, cassava, plantain, scotch bonnet, iru, palm oil, tomatoes.
+              </div>
+              <a href="pages/regions/west-africa.html" class="btn-link" aria-label="Explore West Africa culinary region">Explore Region</a>
+            </div>
+          </article>
+
+          <!-- Region 2: North & Northeast Africa -->
+          <article class="region-card">
+            <div class="region-card-image">
+              <img src="assets/images/north-northeast-africa.jpg" alt="Traditional clay tagines and aromatic roasted spices from North and Northeast Africa" loading="lazy">
+            </div>
+            <div class="region-card-content">
+              <span class="badge badge-terracotta dish-origin-badge">Regional Spotlight</span>
+              <h3>North &amp; Northeast Africa</h3>
+              <p>Rooted in ancient Nile agricultural civilizations, celebrating slow-simmered legumes like fava beans and lentils, toasted cumin, fresh mint, coriander, dates, and rustic hearth-baked flatbreads.</p>
+              <div class="region-staples">
+                <strong>Staples:</strong> Fava beans, cumin, coriander, sesame oil, garlic, flatbreads, fenugreek.
+              </div>
+              <a href="pages/regions/north-northeast-africa.html" class="btn-link" aria-label="Explore North and Northeast Africa culinary region">Explore Region</a>
+            </div>
+          </article>
+
+          <!-- Region 3: East Africa & Indian Ocean Islands -->
+          <article class="region-card">
+            <div class="region-card-image">
+              <img src="assets/images/east-africa-islands.jpg" alt="Richly spiced communal platters and coffee beans from East Africa and the Indian Ocean" loading="lazy">
+            </div>
+            <div class="region-card-content">
+              <span class="badge badge-terracotta dish-origin-badge">Regional Spotlight</span>
+              <h3>East Africa &amp; Islands</h3>
+              <p>From the Ethiopian and Eritrean highlands with teff injera and complex berbere blends to Madagascar’s coastal curries enriched with wild cloves, ginger, vanilla, and leafy paracres greens.</p>
+              <div class="region-staples">
+                <strong>Staples:</strong> Teff, berbere, niter kibbeh, cloves, ginger, anamalao, coconut.
+              </div>
+              <a href="pages/regions/east-africa-islands.html" class="btn-link" aria-label="Explore East Africa and Indian Ocean Islands culinary region">Explore Region</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial / Food Culture Section -->
+    <section class="section" id="food-culture" aria-labelledby="editorial-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow">Heritage &bull; Trends</span>
+          <h2 id="editorial-title">Food Culture &amp; Living Heritage</h2>
+          <p>Essays, ingredient spotlights, and cultural stories celebrating ancestral foodways and contemporary innovations.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Editorial 1: Ancient Grains and Spices -->
+          <article class="editorial-card">
+            <div class="editorial-card-image">
+              <img src="assets/images/african-spices.jpg" alt="Bowls of whole colorful spices, dried chilis, seeds, and ground aromatics" loading="lazy">
+            </div>
+            <div class="editorial-card-body">
+              <span class="eyebrow">Ingredient Spotlight</span>
+              <h3>The Revival of Ancient African Grains and Forest Spices</h3>
+              <p>
+                Centuries before industrial agriculture, cooks across the Sahel and Horn of Africa relied on <mark>drought-resilient grains like fonio, sorghum, and iron-rich teff</mark>. Today, visionary chefs and farmers are re-centering these ancestral grains alongside forest botanicals such as <mark>grains of paradise and wild selim pepper</mark> to build biodiverse culinary futures.
+              </p>
+              <a href="pages/about.html" class="btn-link" aria-label="Read more about ancient grains and African spice traditions">Read Story</a>
+            </div>
+          </article>
+
+          <!-- Editorial 2: Communal Pots and Slow Simmering -->
+          <article class="editorial-card">
+            <div class="editorial-card-image">
+              <img src="assets/images/food-preparation.jpg" alt="Traditional cook preparing aromatic ingredients and simmering stews in an artisanal pot" loading="lazy">
+            </div>
+            <div class="editorial-card-body">
+              <span class="eyebrow">Culinary Craft</span>
+              <h3>The Art of the Slow Fire: Secrets of the Communal Pot</h3>
+              <p>
+                Across the continent, meaningful cooking is never rushed. From the clay pot tagines of the Maghreb to the cast-iron potjies of the south, <mark>labor-intensive onion caramelization and gentle simmering</mark> allow deep flavor matrices to develop, creating stews intended for <mark>shared communal eating with bare hands and flatbreads</mark>.
+              </p>
+              <a href="pages/about.html" class="btn-link" aria-label="Read more about communal cooking and traditional slow fire methods">Read Story</a>
+            </div>
+          </article>
+
+          <!-- Editorial 3: Ethiopian Coffee Ritual -->
+          <article class="editorial-card">
+            <div class="editorial-card-image">
+              <img src="assets/images/coffee-ceremony.jpg" alt="Traditional Ethiopian coffee ceremony setup with clay jebena pot, smoking incense, and small cups" loading="lazy">
+            </div>
+            <div class="editorial-card-body">
+              <span class="eyebrow">Living Ritual</span>
+              <h3>Buna Tetu: Hospitality and Stillness in the Coffee Ceremony</h3>
+              <p>
+                In Ethiopia and Eritrea, preparing coffee is a sacred social rhythm. The ritual involves <mark>roasting raw green beans over glowing charcoal embers</mark>, wafting the aromatic smoke toward honored guests, and serving coffee in <mark>three mindful rounds known as Abol, Tona, and Baraka</mark> to deepen neighborhood bonds.
+              </p>
+              <a href="pages/about.html" class="btn-link" aria-label="Read more about the Ethiopian Buna Tetu coffee ceremony">Read Story</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Video Section -->
+    <section class="section section-warm" id="video-feature" aria-labelledby="video-title">
+      <div class="container">
+        <div class="video-section-inner">
+          <div class="video-section-text">
+            <span class="eyebrow">Visual Journey</span>
+            <h2 id="video-title">A Delicious Journey Through Culture &amp; Heritage</h2>
+            <p>
+              Experience the sights, rhythms, and agricultural roots of African gastronomy. This video showcases how ingredients, ancestral wisdom, and joyous hospitality travel from farm and market to family tables across the diaspora.
+            </p>
+            <div class="video-highlights">
+              <div class="video-highlight-item">
+                <span class="video-highlight-bullet"></span>
+                <span>Celebrates indigenous cooking methods and regional food traditions.</span>
+              </div>
+              <div class="video-highlight-item">
+                <span class="video-highlight-bullet"></span>
+                <span>Highlights the communal spirit that turns everyday meals into celebrations.</span>
+              </div>
+              <div class="video-highlight-item">
+                <span class="video-highlight-bullet"></span>
+                <span>Explores the vibrant connection between heritage crops, identity, and modern life.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- YouTube Embed Container -->
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/mtSvFqyOfNk" 
+              title="African Food: A Delicious Journey Through Culture &amp; Heritage"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Summary Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="Taste of Africa Home">
+            <img src="assets/icons/logo.svg" alt="Taste of Africa" class="brand-logo" width="160" height="38">
+          </a>
+          <p>
+            Dedicated to documenting, celebrating, and preserving the living culinary traditions, indigenous crops, and diverse foodways of the African continent.
+          </p>
+        </div>
+
+        <!-- Quick Links Navigation Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/recipes/index.html">Recipe Collection</a></li>
+            <li><a href="#regions">Culinary Regions</a></li>
+            <li><a href="pages/about.html">About the Project</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Regional Guides Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Regions</h4>
+          <ul class="footer-links">
+            <li><a href="pages/regions/west-africa.html">West Africa</a></li>
+            <li><a href="pages/regions/north-northeast-africa.html">North &amp; Northeast Africa</a></li>
+            <li><a href="pages/regions/east-africa-islands.html">East Africa &amp; Islands</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Stay Connected</h4>
+          <p class="footer-links" style="margin-bottom: var(--space-sm);">Receive seasonal recipes and cultural food stories directly to your inbox.</p>
+          <form class="newsletter-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Taste of Africa newsletter!'); this.reset();">
+            <label for="newsletter-email">Email Address</label>
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="you@example.com" required>
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </div>
+            <span class="newsletter-note">We respect your privacy. Unsubscribe anytime.</span>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Taste of Africa. ALU BSE Formative Web Project.</p>
+        <div class="social-links" aria-label="Social Media and Reference Links">
+          <a href="https://www.youtube.com/@BestEverFoodReviewShow" class="social-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="pages/about.html" class="social-link">Cultural Archive</a>
+          <a href="pages/contact.html" class="social-link">Community Inquiries</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
