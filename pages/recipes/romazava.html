@@ -53,7 +53,7 @@
         </nav>
 
         <header class="recipe-header">
-          <div style="display: flex; gap: var(--space-xs); margin-bottom: var(--space-xs);">
+          <div class="badge-group">
             <span class="badge badge-sand">Madagascar</span>
             <a href="../regions/east-africa-islands.html" class="badge badge-terracotta">Indian Ocean Islands</a>
           </div>
@@ -84,12 +84,12 @@
 
         <figure class="recipe-hero-image">
           <img src="../../assets/images/romazava.jpg" alt="Bowl of Malagasy Romazava stew featuring tender beef and leafy greens in flavorful broth">
-          <figcaption class="eyebrow" style="padding: var(--space-sm) var(--space-md); text-transform: none; color: var(--text-muted); font-size: var(--font-size-xs);">
+          <figcaption>
             Malagasy Romazava prepared with mixed braising beef and traditional leafy greens.
           </figcaption>
         </figure>
 
-        <section style="margin-bottom: var(--space-3xl); max-width: 52rem;">
+        <section class="recipe-story">
           <span class="eyebrow">Cultural Significance</span>
           <h2>The Botanical Soul of Madagascar</h2>
           <p>
@@ -101,7 +101,7 @@
           
           <aside class="ingredients-panel" aria-labelledby="ingredients-heading">
             <h3 id="ingredients-heading">Ingredients</h3>
-            <p style="font-size: var(--font-size-xs); color: var(--text-muted);">Measured for 5 comforting servings.</p>
+            <p class="subtle-text">Measured for 5 comforting servings.</p>
             
             <ul class="ingredients-list" id="ingredients-list">
               <li>
@@ -154,14 +154,14 @@
               </li>
             </ul>
 
-            <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--border-color);">
+            <div class="ingredients-footer">
               <a href="../regions/east-africa-islands.html" class="btn-link">Explore Indian Ocean Islands Culture</a>
             </div>
           </aside>
 
           <div class="instructions-panel" aria-labelledby="instructions-heading">
             <h3 id="instructions-heading">Preparation Instructions</h3>
-            <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-bottom: var(--space-md);">
+            <p class="instructions-hint">
               Click each step to expand details and cooking notes.
             </p>
 
@@ -210,7 +210,7 @@
           </div>
         </div>
 
-        <section class="section-warm" style="padding: var(--space-2xl); border-radius: var(--radius-lg); margin-top: var(--space-2xl);">
+        <section class="section-warm section-card mt-2xl">
           <div class="video-section-inner">
             <div>
               <span class="eyebrow">Video Demonstration</span>
@@ -219,10 +219,10 @@
                 Watch this authentic Malagasy culinary tutorial demonstrating the careful preparation of beef, ginger broth, and traditional brèdes to craft Madagascar’s national soup.
               </p>
               
-              <div style="margin-top: var(--space-xl);">
+              <div class="recipe-origin-box">
                 <span class="eyebrow">Country of Origin</span>
-                <h3 style="font-size: var(--font-size-lg);">Madagascar, Indian Ocean Islands</h3>
-                <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-bottom: var(--space-sm);">
+                <h3 class="origin-heading">Madagascar, Indian Ocean Islands</h3>
+                <p class="origin-description">
                   Situated off the southeast coast of Africa, Madagascar boasts extraordinary biodiversity, ancient zebu cattle farming, and a unique synthesis of African and Austronesian foodways.
                 </p>
                 <div class="map-wrapper">
@@ -284,7 +284,7 @@
 
         <div class="footer-col">
           <h4 class="footer-heading">Stay Connected</h4>
-          <p class="footer-links" style="margin-bottom: var(--space-sm);">Receive seasonal recipes and cultural food stories directly to your inbox.</p>
+          <p class="footer-description">Receive seasonal recipes and cultural food stories directly to your inbox.</p>
           <form class="newsletter-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Taste of Africa newsletter!'); this.reset();">
             <label for="newsletter-email">Email Address</label>
             <div class="newsletter-input-group">
