@@ -98,11 +98,66 @@
   --text-primary: #F7F4ED;
   --text-muted: #D1C7BD;
   --text-inverted: #332D29;
-  --color-border: rgba(247, 244, 237, 0.12);
-  --color-border-subtle: rgba(247, 244, 237, 0.06);
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --color-border: rgba(247, 244, 237, 0.14);
+  --color-border-subtle: rgba(247, 244, 237, 0.08);
+  --border-color: rgba(247, 244, 237, 0.14);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
   --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme="dark"] .site-header {
+  background-color: rgba(31, 28, 26, 0.94);
+}
+
+[data-theme="dark"] .site-header.scrolled {
+  background-color: rgba(31, 28, 26, 0.98);
+}
+
+[data-theme="dark"] .brand-logo {
+  filter: invert(95%) sepia(8%) saturate(300%) hue-rotate(350deg);
+}
+
+[data-theme="dark"] .badge-sand {
+  background-color: #38302A;
+  color: var(--color-sand);
+}
+
+[data-theme="dark"] .badge-terracotta {
+  background-color: #38241C;
+  color: #E29377;
+}
+
+[data-theme="dark"] .badge-olive {
+  background-color: #2E3326;
+  color: #B2B896;
+}
+
+[data-theme="dark"] .btn-secondary {
+  color: var(--text-primary);
+  border-color: var(--color-sand);
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+  background-color: var(--color-sand);
+  color: var(--color-charcoal);
+}
+
+[data-theme="dark"] .btn-favorite {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .btn-favorite:hover,
+[data-theme="dark"] .btn-favorite.is-favorite {
+  background-color: #3E2422;
+  color: #F1948A;
+  border-color: #C0392B;
+}
+
+[data-theme="dark"] .map-wrapper {
+  background-color: var(--bg-surface);
 }
 
 /* Reset and Base Styles */
@@ -424,6 +479,45 @@ mark {
 .nav-link.active {
   color: var(--accent-primary);
   font-weight: 600;
+}
+
+.primary-nav {
+  margin-left: auto;
+}
+
+/* Header Controls */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-left: var(--space-lg);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.375rem;
+  height: 2.375rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  transition: background-color var(--transition-fast), color var(--transition-fast),
+    border-color var(--transition-fast), transform var(--transition-fast);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  transform: scale(1.05);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
 }
 
 /* Mobile Hamburger Toggle Button */
@@ -1162,6 +1256,86 @@ mark {
   padding-bottom: var(--space-xs);
 }
 
+.servings-control {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-md);
+  padding: 0.35rem 0.65rem;
+  background-color: var(--bg-surface-warm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-xs);
+}
+
+.servings-label {
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.servings-stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  padding: 0.15rem 0.35rem;
+}
+
+.btn-servings {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: var(--radius-pill);
+  background-color: transparent;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  cursor: pointer;
+}
+
+.btn-servings:hover {
+  background-color: var(--accent-primary);
+  color: var(--color-white);
+}
+
+.btn-servings:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.servings-count {
+  min-width: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+}
+
+.btn-servings-reset {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  text-decoration: underline;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: color var(--transition-fast);
+}
+
+.btn-servings-reset:hover {
+  color: var(--accent-primary);
+}
+
 .ingredients-list {
   display: flex;
   flex-direction: column;
@@ -1391,6 +1565,58 @@ details.recipe-step p {
   display: block;
 }
 
+.form-feedback.is-error {
+  background-color: #FDEDEC;
+  color: #922B21;
+  border-color: #E6B0AA;
+}
+
+.form-feedback.is-error ul {
+  margin-top: var(--space-xs);
+  margin-left: var(--space-lg);
+  list-style: disc;
+}
+
+.form-feedback.is-error li {
+  margin-bottom: var(--space-2xs);
+  font-size: var(--font-size-sm);
+}
+
+.form-feedback.is-success {
+  background-color: var(--color-olive-subtle);
+  color: var(--color-olive-dark);
+  border-color: var(--color-olive);
+}
+
+.form-feedback.is-success h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-xs);
+  color: var(--color-olive-dark);
+}
+
+[data-theme="dark"] .form-feedback.is-error {
+  background-color: #381E1E;
+  color: #F5B7B1;
+  border-color: #78281F;
+}
+
+[data-theme="dark"] .form-feedback.is-success {
+  background-color: #262D22;
+  color: #C2C8A8;
+  border-color: #555E42;
+}
+
+[data-theme="dark"] .form-feedback.is-success h3 {
+  color: #DDE2C6;
+}
+
+.form-group input.is-invalid,
+.form-group select.is-invalid,
+.form-group textarea.is-invalid {
+  border-color: #C0392B;
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
+}
+
 /* Region Page Components */
 .region-lead-grid {
   display: grid;
@@ -1601,9 +1827,15 @@ details.recipe-step p {
   }
 
   /* Hamburger toggle appears on tablet/mobile */
+  .header-controls {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+  }
+
   .nav-toggle {
     display: flex;
-    margin-left: auto;
   }
 
   /* Navigation drawer with comfortable, explicit height */
