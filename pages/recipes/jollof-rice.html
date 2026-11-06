@@ -53,7 +53,7 @@
         </nav>
 
         <header class="recipe-header">
-          <div style="display: flex; gap: var(--space-xs); margin-bottom: var(--space-xs);">
+          <div class="badge-group">
             <span class="badge badge-sand">Nigeria</span>
             <a href="../regions/west-africa.html" class="badge badge-terracotta">West Africa</a>
           </div>
@@ -84,12 +84,12 @@
 
         <figure class="recipe-hero-image">
           <img src="../../assets/images/jollof-rice.jpg" alt="Rich orange Nigerian Party Jollof Rice served with vegetables and herbs">
-          <figcaption class="eyebrow" style="padding: var(--space-sm) var(--space-md); text-transform: none; color: var(--text-muted); font-size: var(--font-size-xs);">
+          <figcaption>
             Nigerian Party Jollof Rice slow-cooked in a sealed pot to develop the prized smoky reduction.
           </figcaption>
         </figure>
 
-        <section style="margin-bottom: var(--space-3xl); max-width: 52rem;">
+        <section class="recipe-story">
           <span class="eyebrow">Cultural Significance</span>
           <h2>The Soul of Nigerian Celebrations</h2>
           <p>
@@ -102,7 +102,7 @@
           <!-- Ingredients Column -->
           <aside class="ingredients-panel" aria-labelledby="ingredients-heading">
             <h3 id="ingredients-heading">Ingredients</h3>
-            <p style="font-size: var(--font-size-xs); color: var(--text-muted);">Measured for 6 generous servings.</p>
+            <p class="subtle-text">Measured for 6 generous servings.</p>
             
             <ul class="ingredients-list" id="ingredients-list">
               <li>
@@ -155,7 +155,7 @@
               </li>
             </ul>
 
-            <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--border-color);">
+            <div class="ingredients-footer">
               <a href="../regions/west-africa.html" class="btn-link">Explore West African Food Culture</a>
             </div>
           </aside>
@@ -163,7 +163,7 @@
           <!-- Instructions Column -->
           <div class="instructions-panel" aria-labelledby="instructions-heading">
             <h3 id="instructions-heading">Preparation Instructions</h3>
-            <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-bottom: var(--space-md);">
+            <p class="instructions-hint">
               Click each step to expand details and cooking notes.
             </p>
 
@@ -213,7 +213,7 @@
         </div>
 
         <!-- Video Tutorial & Map Section -->
-        <section class="section-warm" style="padding: var(--space-2xl); border-radius: var(--radius-lg); margin-top: var(--space-2xl);">
+        <section class="section-warm section-card mt-2xl">
           <div class="video-section-inner">
             <div>
               <span class="eyebrow">Video Tutorial</span>
@@ -222,10 +222,10 @@
                 Follow along with this step-by-step masterclass by Sisi Yemmie demonstrating the authentic Nigerian party jollof technique, from frying the pepper reduction to mastering the smoke effect.
               </p>
               
-              <div style="margin-top: var(--space-xl);">
+              <div class="recipe-origin-box">
                 <span class="eyebrow">Country of Origin</span>
-                <h3 style="font-size: var(--font-size-lg);">Nigeria, West Africa</h3>
-                <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-bottom: var(--space-sm);">
+                <h3 class="origin-heading">Nigeria, West Africa</h3>
+                <p class="origin-description">
                   Situated along the Gulf of Guinea, Nigeria’s culinary heritage is celebrated for vibrant pepper bases, communal banquets, and regional farm staples.
                 </p>
                 <div class="map-wrapper">
@@ -287,7 +287,7 @@
 
         <div class="footer-col">
           <h4 class="footer-heading">Stay Connected</h4>
-          <p class="footer-links" style="margin-bottom: var(--space-sm);">Receive seasonal recipes and cultural food stories directly to your inbox.</p>
+          <p class="footer-description">Receive seasonal recipes and cultural food stories directly to your inbox.</p>
           <form class="newsletter-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Taste of Africa newsletter!'); this.reset();">
             <label for="newsletter-email">Email Address</label>
             <div class="newsletter-input-group">
