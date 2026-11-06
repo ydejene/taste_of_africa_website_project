@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our curated collection of authentic African heritage recipes, from celebratory jollof rice to slow-simmered regional stews and legume staples.">
+  <title>Recipe Collection — Taste of Africa</title>
+
+  <!-- Google Fonts: Playfair Display & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,500..800;1,500..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/styles.css">
+  <script src="../../js/script.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="brand" aria-label="Taste of Africa Home">
+        <img src="../../assets/icons/logo.svg" alt="Taste of Africa" class="brand-logo" width="180" height="42">
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html" class="nav-link active" aria-current="page">Recipes</a></li>
+          <li><a href="../regions/west-africa.html" class="nav-link">Regions</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main">
+    <section class="section">
+      <div class="container">
+        
+        <!-- Breadcrumbs Navigation -->
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumbs-separator">/</span>
+          <span aria-current="page">Recipes</span>
+        </nav>
+
+        <div class="section-header text-center">
+          <span class="eyebrow">Culinary Archive</span>
+          <h1>Heritage Recipe Collection</h1>
+          <p>
+            Explore time-tested dishes crafted with ancestral grains, aromatic spice blends, and slow-cooking techniques passed down across generations.
+          </p>
+        </div>
+
+        <!-- Recipe Region Filter Controls -->
+        <div class="filter-bar" role="region" aria-label="Filter recipes by region">
+          <button type="button" class="filter-btn active" data-filter="all">All Recipes</button>
+          <button type="button" class="filter-btn" data-filter="west-africa">West Africa</button>
+          <button type="button" class="filter-btn" data-filter="north-northeast-africa">North &amp; Northeast Africa</button>
+          <button type="button" class="filter-btn" data-filter="east-africa-islands">East Africa &amp; Islands</button>
+        </div>
+
+        <!-- Recipe Cards Grid -->
+        <div class="grid-3" id="recipe-grid">
+          
+          <!-- Recipe 1: Nigerian Jollof Rice -->
+          <article class="card featured-dish-card" data-region="west-africa">
+            <figure>
+              <div class="featured-dish-image-wrapper">
+                <span class="badge badge-sand dish-origin-badge">Nigeria &bull; West Africa</span>
+                <img src="../../assets/images/jollof-rice.jpg" alt="Nigerian Jollof Rice served with seasoned vegetables and rich tomato reduction" loading="lazy">
+              </div>
+              <figcaption>
+                <h3><a href="jollof-rice.html">Nigerian Jollof Rice</a></h3>
+                <p>Fragrant parboiled long-grain rice simmered in a smoky, rich reduction of plum tomatoes, red bell peppers, onions, scotch bonnets, and dried thyme.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: var(--space-sm);">
+                  <a href="jollof-rice.html" class="btn-link" aria-label="View Nigerian Jollof Rice recipe">View Recipe</a>
+                  <button type="button" class="btn-favorite" data-recipe-id="jollof-rice" aria-label="Add Nigerian Jollof Rice to favorites">
+                    <span aria-hidden="true">&#9825;</span> Favorite
+                  </button>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Recipe 2: Sudanese Ful Medames -->
+          <article class="card featured-dish-card" data-region="north-northeast-africa">
+            <figure>
+              <div class="featured-dish-image-wrapper">
+                <span class="badge badge-sand dish-origin-badge">Sudan &bull; North &amp; Northeast</span>
+                <img src="../../assets/images/ful-medames.jpg" alt="Sudanese Ful Medames mashed fava beans garnished with boiled eggs and herbs" loading="lazy">
+              </div>
+              <figcaption>
+                <h3><a href="ful-medames.html">Sudanese Ful Medames</a></h3>
+                <p>Tender slow-simmered fava beans seasoned with toasted cumin, garlic, and fresh lemon, dressed with golden sesame oil, crumbled gibna bayda, and herbs.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: var(--space-sm);">
+                  <a href="ful-medames.html" class="btn-link" aria-label="View Sudanese Ful Medames recipe">View Recipe</a>
+                  <button type="button" class="btn-favorite" data-recipe-id="ful-medames" aria-label="Add Sudanese Ful Medames to favorites">
+                    <span aria-hidden="true">&#9825;</span> Favorite
+                  </button>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Recipe 3: Ethiopian Doro Wat -->
+          <article class="card featured-dish-card" data-region="east-africa-islands">
+            <figure>
+              <div class="featured-dish-image-wrapper">
+                <span class="badge badge-sand dish-origin-badge">Ethiopia &bull; East Africa</span>
+                <img src="../../assets/images/doro-wat.jpg" alt="Ethiopian Doro Wat spicy chicken stew served with hard-boiled eggs in dark berbere sauce" loading="lazy">
+              </div>
+              <figcaption>
+                <h3><a href="doro-wat.html">Ethiopian Doro Wat</a></h3>
+                <p>Iconic highland chicken stew braised slowly with deeply caramelized red onions, pungent berbere spice blend, niter kibbeh clarified butter, and boiled eggs.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: var(--space-sm);">
+                  <a href="doro-wat.html" class="btn-link" aria-label="View Ethiopian Doro Wat recipe">View Recipe</a>
+                  <button type="button" class="btn-favorite" data-recipe-id="doro-wat" aria-label="Add Ethiopian Doro Wat to favorites">
+                    <span aria-hidden="true">&#9825;</span> Favorite
+                  </button>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Recipe 4: Eritrean Zigni -->
+          <article class="card featured-dish-card" data-region="east-africa-islands">
+            <figure>
+              <div class="featured-dish-image-wrapper">
+                <span class="badge badge-sand dish-origin-badge">Eritrea &bull; East Africa</span>
+                <img src="../../assets/images/zigni.jpg" alt="Eritrean Zigni beef stew simmering with rich berbere sauce and garlic" loading="lazy">
+              </div>
+              <figcaption>
+                <h3><a href="zigni.html">Eritrean Zigni</a></h3>
+                <p>Fiery Eritrean beef stew slow-cooked with generous quantities of berbere, puréed tomatoes, garlic, and spiced clarified butter until intensely rich and tender.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: var(--space-sm);">
+                  <a href="zigni.html" class="btn-link" aria-label="View Eritrean Zigni recipe">View Recipe</a>
+                  <button type="button" class="btn-favorite" data-recipe-id="zigni" aria-label="Add Eritrean Zigni to favorites">
+                    <span aria-hidden="true">&#9825;</span> Favorite
+                  </button>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Recipe 5: Malagasy Romazava -->
+          <article class="card featured-dish-card" data-region="east-africa-islands">
+            <figure>
+              <div class="featured-dish-image-wrapper">
+                <span class="badge badge-sand dish-origin-badge">Madagascar &bull; Islands</span>
+                <img src="../../assets/images/romazava.jpg" alt="Malagasy Romazava traditional beef stew with anamalao greens" loading="lazy">
+              </div>
+              <figcaption>
+                <h3><a href="romazava.html">Malagasy Romazava</a></h3>
+                <p>Madagascar’s revered national stew marrying tender braised beef with leafy anamalao greens that impart a distinctive, tingling peppery essence to the broth.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: var(--space-sm);">
+                  <a href="romazava.html" class="btn-link" aria-label="View Malagasy Romazava recipe">View Recipe</a>
+                  <button type="button" class="btn-favorite" data-recipe-id="romazava" aria-label="Add Malagasy Romazava to favorites">
+                    <span aria-hidden="true">&#9825;</span> Favorite
+                  </button>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../index.html" class="brand" aria-label="Taste of Africa Home">
+            <img src="../../assets/icons/logo.svg" alt="Taste of Africa" class="brand-logo" width="160" height="38">
+          </a>
+          <p>Dedicated to documenting, celebrating, and preserving the living culinary traditions, indigenous crops, and diverse foodways of the African continent.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="index.html">Recipe Collection</a></li>
+            <li><a href="../regions/west-africa.html">Culinary Regions</a></li>
+            <li><a href="../about.html">About the Project</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Regions</h4>
+          <ul class="footer-links">
+            <li><a href="../regions/west-africa.html">West Africa</a></li>
+            <li><a href="../regions/north-northeast-africa.html">North &amp; Northeast Africa</a></li>
+            <li><a href="../regions/east-africa-islands.html">East Africa &amp; Islands</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Stay Connected</h4>
+          <p class="footer-links" style="margin-bottom: var(--space-sm);">Receive seasonal recipes and cultural food stories directly to your inbox.</p>
+          <form class="newsletter-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Taste of Africa newsletter!'); this.reset();">
+            <label for="newsletter-email">Email Address</label>
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="you@example.com" required>
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </div>
+            <span class="newsletter-note">We respect your privacy. Unsubscribe anytime.</span>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Taste of Africa. ALU BSE Formative Web Project.</p>
+        <div class="social-links" aria-label="Social Media and Reference Links">
+          <a href="https://www.youtube.com/@BestEverFoodReviewShow" class="social-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="../about.html" class="social-link">Cultural Archive</a>
+          <a href="../contact.html" class="social-link">Community Inquiries</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with the Taste of Africa team. Share traditional recipe suggestions, cultural inquiries, or culinary collaboration ideas.">
+  <title>Contact Us — Taste of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,500..800;1,500..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand" aria-label="Taste of Africa Home">
+        <img src="../assets/icons/logo.svg" alt="Taste of Africa" class="brand-logo" width="180" height="42">
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="recipes/index.html" class="nav-link">Recipes</a></li>
+          <li><a href="regions/west-africa.html" class="nav-link">Regions</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main">
+    <section class="section">
+      <div class="container">
+        
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="breadcrumbs-separator">/</span>
+          <span aria-current="page">Contact Us</span>
+        </nav>
+
+        <div class="section-header text-center">
+          <span class="eyebrow">Connect With Us</span>
+          <h1>We Would Love to Hear From You</h1>
+          <p>
+            Have an authentic heritage recipe to share, a question regarding traditional cooking methods, or feedback on our digital culinary archive? Send us a message below.
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <div id="contact-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+
+          <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+            
+            <div class="form-group">
+              <label for="contact-name">Full Name <span aria-hidden="true" style="color: var(--accent-primary);">*</span></label>
+              <input 
+                type="text" 
+                id="contact-name" 
+                name="name" 
+                placeholder="e.g. Amara Okafor" 
+                required 
+                autocomplete="name">
+              <span class="form-help">Please enter your first and last name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address <span aria-hidden="true" style="color: var(--accent-primary);">*</span></label>
+              <input 
+                type="email" 
+                id="contact-email" 
+                name="email" 
+                placeholder="name@example.com" 
+                required 
+                autocomplete="email">
+              <span class="form-help">We will only use this to respond to your inquiry.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-country">Country of Residence / Origin <span aria-hidden="true" style="color: var(--accent-primary);">*</span></label>
+              <select id="contact-country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Egypt">Egypt</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="other">Other / Diaspora</option>
+              </select>
+              <span class="form-help">Select your primary country of residence or cultural origin.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-country-other">Specific Country / Region (Optional)</label>
+              <input 
+                type="text" 
+                id="contact-country-other" 
+                name="country_other" 
+                list="african-countries" 
+                placeholder="Type or select from suggestions if Other / Diaspora">
+              <datalist id="african-countries">
+                <option value="Algeria">
+                <option value="Angola">
+                <option value="Benin">
+                <option value="Botswana">
+                <option value="Burkina Faso">
+                <option value="Burundi">
+                <option value="Cape Verde">
+                <option value="Chad">
+                <option value="Comoros">
+                <option value="Democratic Republic of the Congo">
+                <option value="Djibouti">
+                <option value="Equatorial Guinea">
+                <option value="Eswatini">
+                <option value="Gabon">
+                <option value="Gambia">
+                <option value="Guinea">
+                <option value="Guinea-Bissau">
+                <option value="Ivory Coast">
+                <option value="Lesotho">
+                <option value="Liberia">
+                <option value="Libya">
+                <option value="Malawi">
+                <option value="Mali">
+                <option value="Mauritania">
+                <option value="Mauritius">
+                <option value="Mozambique">
+                <option value="Namibia">
+                <option value="Niger">
+                <option value="Republic of the Congo">
+                <option value="São Tomé and Príncipe">
+                <option value="Seychelles">
+                <option value="Sierra Leone">
+                <option value="Somalia">
+                <option value="South Sudan">
+                <option value="Togo">
+                <option value="Tunisia">
+                <option value="Uganda">
+                <option value="Zambia">
+                <option value="Zimbabwe">
+                <option value="United Kingdom (Diaspora)">
+                <option value="United States (Diaspora)">
+                <option value="Canada (Diaspora)">
+                <option value="France (Diaspora)">
+                <option value="Caribbean (Diaspora)">
+                <option value="Brazil (Diaspora)">
+              </datalist>
+              <span class="form-help">Use suggestions to specify your location if not listed above.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-region-interest">Culinary Region of Primary Interest</label>
+              <select id="contact-region-interest" name="region_interest">
+                <option value="" disabled selected>Choose a culinary region</option>
+                <option value="west-africa">West Africa</option>
+                <option value="north-northeast-africa">North &amp; Northeast Africa</option>
+                <option value="east-africa-islands">East Africa &amp; Indian Ocean Islands</option>
+                <option value="pan-african">Pan-African / All Regions</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message <span aria-hidden="true" style="color: var(--accent-primary);">*</span></label>
+              <textarea 
+                id="contact-message" 
+                name="message" 
+                rows="6" 
+                placeholder="Share your recipe recommendations, thoughts, or cultural questions here..." 
+                required 
+                minlength="21"></textarea>
+              <span class="form-help" id="message-help">Your message must be at least 21 characters long.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="contact-submit" style="width: 100%;">
+              Send Message &rarr;
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand" aria-label="Taste of Africa Home">
+            <img src="../assets/icons/logo.svg" alt="Taste of Africa" class="brand-logo" width="160" height="38">
+          </a>
+          <p>Dedicated to documenting, celebrating, and preserving the living culinary traditions, indigenous crops, and diverse foodways of the African continent.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="recipes/index.html">Recipe Collection</a></li>
+            <li><a href="regions/west-africa.html">Culinary Regions</a></li>
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Regions</h4>
+          <ul class="footer-links">
+            <li><a href="regions/west-africa.html">West Africa</a></li>
+            <li><a href="regions/north-northeast-africa.html">North &amp; Northeast Africa</a></li>
+            <li><a href="regions/east-africa-islands.html">East Africa &amp; Islands</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Stay Connected</h4>
+          <p class="footer-links" style="margin-bottom: var(--space-sm);">Receive seasonal recipes and cultural food stories directly to your inbox.</p>
+          <form class="newsletter-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Taste of Africa newsletter!'); this.reset();">
+            <label for="newsletter-email">Email Address</label>
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="you@example.com" required>
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </div>
+            <span class="newsletter-note">We respect your privacy. Unsubscribe anytime.</span>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Taste of Africa. ALU BSE Formative Web Project.</p>
+        <div class="social-links" aria-label="Social Media and Reference Links">
+          <a href="https://www.youtube.com/@BestEverFoodReviewShow" class="social-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="about.html" class="social-link">Cultural Archive</a>
+          <a href="contact.html" class="social-link">Community Inquiries</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

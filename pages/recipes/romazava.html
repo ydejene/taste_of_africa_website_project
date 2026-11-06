@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Traditional Malagasy Romazava recipe: Madagascar's national beef and leafy green broth stew featuring anamalao (paracres), ginger, and fresh tomatoes.">
+  <title>Malagasy Romazava Recipe — Taste of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,500..800;1,500..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/styles.css">
+  <script src="../../js/script.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="brand" aria-label="Taste of Africa Home">
+        <img src="../../assets/icons/logo.svg" alt="Taste of Africa" class="brand-logo" width="180" height="42">
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html" class="nav-link active" aria-current="page">Recipes</a></li>
+          <li><a href="../regions/east-africa-islands.html" class="nav-link">Regions</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main">
+    <article class="section">
+      <div class="container">
+        
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumbs-separator">/</span>
+          <a href="index.html">Recipes</a>
+          <span class="breadcrumbs-separator">/</span>
+          <span aria-current="page">Malagasy Romazava</span>
+        </nav>
+
+        <header class="recipe-header">
+          <div style="display: flex; gap: var(--space-xs); margin-bottom: var(--space-xs);">
+            <span class="badge badge-sand">Madagascar</span>
+            <a href="../regions/east-africa-islands.html" class="badge badge-terracotta">Indian Ocean Islands</a>
+          </div>
+          <h1>Malagasy Romazava</h1>
+          <p class="lead">
+            Madagascar’s national dish: a restorative, fragrant clear meat stew simmered with leafy greens, ginger, fresh tomatoes, and the tingling botanical note of anamalao (brède mafane).
+          </p>
+
+          <div class="recipe-meta-grid">
+            <div class="recipe-meta-item">
+              <span class="recipe-meta-label">Prep Time</span>
+              <span class="recipe-meta-value">20 mins</span>
+            </div>
+            <div class="recipe-meta-item">
+              <span class="recipe-meta-label">Cook Time</span>
+              <span class="recipe-meta-value">1 hr 15 mins</span>
+            </div>
+            <div class="recipe-meta-item">
+              <span class="recipe-meta-label">Total Time</span>
+              <span class="recipe-meta-value">1 hr 35 mins</span>
+            </div>
+            <div class="recipe-meta-item">
+              <span class="recipe-meta-label">Servings</span>
+              <span class="recipe-meta-value" id="servings-display">5 servings</span>
+            </div>
+          </div>
+        </header>
+
+        <figure class="recipe-hero-image">
+          <img src="../../assets/images/romazava.jpg" alt="Bowl of Malagasy Romazava stew featuring tender beef and leafy greens in flavorful broth">
+          <figcaption class="eyebrow" style="padding: var(--space-sm) var(--space-md); text-transform: none; color: var(--text-muted); font-size: var(--font-size-xs);">
+            Malagasy Romazava prepared with mixed braising beef and traditional leafy greens.
+          </figcaption>
+        </figure>
+
+        <section style="margin-bottom: var(--space-3xl); max-width: 52rem;">
+          <span class="eyebrow">Cultural Significance</span>
+          <h2>The Botanical Soul of Madagascar</h2>
+          <p>
+            Romazava holds a unique place in the culinary tapestry of Madagascar, where Austronesian seafaring roots intermingled with East African agricultural traditions. The hallmark of Romazava is its use of indigenous greens, specifically <em>anamalao</em> (known in French as <em>brède mafane</em> or toothache plant). The flower buds and leaves contain spilanthol, which imparts a gentle, invigorating tingling and mouth-cooling sensation on the palate that enhances the richness of braised zebu beef. Traditionally enjoyed with white rice and fiery rougail condiment, Romazava is both a royal dish of ancient Merina monarchs and a treasured comfort food in every Malagasy home.
+          </p>
+        </section>
+
+        <div class="recipe-content-grid">
+          
+          <aside class="ingredients-panel" aria-labelledby="ingredients-heading">
+            <h3 id="ingredients-heading">Ingredients</h3>
+            <p style="font-size: var(--font-size-xs); color: var(--text-muted);">Measured for 5 comforting servings.</p>
+            
+            <ul class="ingredients-list" id="ingredients-list">
+              <li>
+                <span>Braising beef (chuck or brisket), cut into bite-sized cubes</span>
+                <span class="ingredient-amount" data-base-qty="800" data-unit="g">800 g</span>
+              </li>
+              <li>
+                <span>Fresh ginger root, peeled and grated</span>
+                <span class="ingredient-amount" data-base-qty="2" data-unit="tbsp">2 tbsp</span>
+              </li>
+              <li>
+                <span>Garlic cloves, crushed</span>
+                <span class="ingredient-amount" data-base-qty="4" data-unit="cloves">4 cloves</span>
+              </li>
+              <li>
+                <span>Medium yellow onions, chopped</span>
+                <span class="ingredient-amount" data-base-qty="2" data-unit="medium">2 medium</span>
+              </li>
+              <li>
+                <span>Fresh plum tomatoes, diced</span>
+                <span class="ingredient-amount" data-base-qty="3" data-unit="medium">3 medium</span>
+              </li>
+              <li>
+                <span>Anamalao (brède mafane / watercress substitute)</span>
+                <span class="ingredient-amount" data-base-qty="200" data-unit="g">200 g</span>
+              </li>
+              <li>
+                <span>Fresh spinach or mustard greens (brèdes de Chine)</span>
+                <span class="ingredient-amount" data-base-qty="200" data-unit="g">200 g</span>
+              </li>
+              <li>
+                <span>Vegetable oil</span>
+                <span class="ingredient-amount" data-base-qty="2" data-unit="tbsp">2 tbsp</span>
+              </li>
+              <li>
+                <span>Water or light meat stock</span>
+                <span class="ingredient-amount" data-base-qty="4" data-unit="cups">4 cups</span>
+              </li>
+              <li>
+                <span>Sea salt and freshly ground black pepper</span>
+                <span class="ingredient-amount" data-base-qty="1" data-unit="to taste">to taste</span>
+              </li>
+              <li>
+                <span>Steamed Jasmine or white rice</span>
+                <span class="ingredient-amount" data-base-qty="4" data-unit="cups">for serving</span>
+              </li>
+              <li>
+                <span>Sakay (Malagasy chili paste) or tomato rougail</span>
+                <span class="ingredient-amount" data-base-qty="1" data-unit="on side">optional</span>
+              </li>
+            </ul>
+
+            <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--border-color);">
+              <a href="../regions/east-africa-islands.html" class="btn-link">Explore Indian Ocean Islands Culture</a>
+            </div>
+          </aside>
+
+          <div class="instructions-panel" aria-labelledby="instructions-heading">
+            <h3 id="instructions-heading">Preparation Instructions</h3>
+            <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-bottom: var(--space-md);">
+              Click each step to expand details and cooking notes.
+            </p>
+
+            <details class="recipe-step" open>
+              <summary>Step 1: Sear the Beef</summary>
+              <p>
+                Heat 2 tablespoons of vegetable oil in a heavy Dutch oven or stockpot over medium-high heat. Season the beef cubes lightly with salt. Brown the meat in batches for 5–7 minutes until caramelized on the edges, developing a foundational savory fond at the bottom of the pot.
+              </p>
+            </details>
+
+            <details class="recipe-step">
+              <summary>Step 2: Sauté Aromatics and Tomatoes</summary>
+              <p>
+                Reduce the heat to medium. Add the chopped onions, grated ginger, and crushed garlic to the pot. Sauté for 4–5 minutes until fragrant and translucent. Add the diced tomatoes, stirring thoroughly to deglaze the bottom of the pot and dissolve the browned meat juices.
+              </p>
+            </details>
+
+            <details class="recipe-step">
+              <summary>Step 3: Simmer the Broth</summary>
+              <p>
+                Pour in 4 cups of water or light stock. Bring to a boil, then immediately turn the heat down to low. Cover the pot with a tight-fitting lid and simmer gently for 50 minutes to 1 hour, until the beef is tender and the broth has absorbed the essence of ginger and tomato.
+              </p>
+            </details>
+
+            <details class="recipe-step">
+              <summary>Step 4: Wash and Prepare the Greens</summary>
+              <p>
+                Thoroughly wash the anamalao leaves (including small yellow buds) and the mixed mustard or spinach greens in cold water. Trim any tough stems. Coarsely chop the leaves into bite-sized clusters.
+              </p>
+            </details>
+
+            <details class="recipe-step">
+              <summary>Step 5: Fold in the Greens</summary>
+              <p>
+                Uncover the pot and gently fold in the mixed leafy greens. Do not overcook; simmer uncovered on low heat for only 8–10 minutes until the greens are tender and wilted into the broth but retain their vibrant emerald color. Season with salt and black pepper to taste.
+              </p>
+            </details>
+
+            <details class="recipe-step">
+              <summary>Step 6: Traditional Malagasy Service</summary>
+              <p>
+                Serve the steaming Romazava in deep bowls with plenty of its aromatic, tingling broth. Accompany with generous mounds of plain steamed white rice (vary) and spicy tomato rougail or sakay chili sauce on the side.
+              </p>
+            </details>
+
+          </div>
+        </div>
+
+        <section class="section-warm" style="padding: var(--space-2xl); border-radius: var(--radius-lg); margin-top: var(--space-2xl);">
+          <div class="video-section-inner">
+            <div>
+              <span class="eyebrow">Video Demonstration</span>
+              <h2>How to Make Traditional Romazava</h2>
+              <p>
+                Watch this authentic Malagasy culinary tutorial demonstrating the careful preparation of beef, ginger broth, and traditional brèdes to craft Madagascar’s national soup.
+              </p>
+              
+              <div style="margin-top: var(--space-xl);">
+                <span class="eyebrow">Country of Origin</span>
+                <h3 style="font-size: var(--font-size-lg);">Madagascar, Indian Ocean Islands</h3>
+                <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-bottom: var(--space-sm);">
+                  Situated off the southeast coast of Africa, Madagascar boasts extraordinary biodiversity, ancient zebu cattle farming, and a unique synthesis of African and Austronesian foodways.
+                </p>
+                <div class="map-wrapper">
+                  <iframe 
+                    src="https://maps.google.com/maps?q=Madagascar&t=&z=5&ie=UTF8&iwloc=&output=embed" 
+                    title="Map of Madagascar, Country of Origin for Malagasy Romazava"
+                    loading="lazy">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-wrapper">
+              <iframe 
+                src="https://www.youtube.com/embed/xnKziikbbvE" 
+                title="Traditional Malagasy Romazava Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../index.html" class="brand" aria-label="Taste of Africa Home">
+            <img src="../../assets/icons/logo.svg" alt="Taste of Africa" class="brand-logo" width="160" height="38">
+          </a>
+          <p>Dedicated to documenting, celebrating, and preserving the living culinary traditions, indigenous crops, and diverse foodways of the African continent.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="index.html">Recipe Collection</a></li>
+            <li><a href="../regions/west-africa.html">Culinary Regions</a></li>
+            <li><a href="../about.html">About the Project</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Regions</h4>
+          <ul class="footer-links">
+            <li><a href="../regions/west-africa.html">West Africa</a></li>
+            <li><a href="../regions/north-northeast-africa.html">North &amp; Northeast Africa</a></li>
+            <li><a href="../regions/east-africa-islands.html">East Africa &amp; Islands</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Stay Connected</h4>
+          <p class="footer-links" style="margin-bottom: var(--space-sm);">Receive seasonal recipes and cultural food stories directly to your inbox.</p>
+          <form class="newsletter-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Taste of Africa newsletter!'); this.reset();">
+            <label for="newsletter-email">Email Address</label>
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="you@example.com" required>
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </div>
+            <span class="newsletter-note">We respect your privacy. Unsubscribe anytime.</span>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Taste of Africa. ALU BSE Formative Web Project.</p>
+        <div class="social-links" aria-label="Social Media and Reference Links">
+          <a href="https://www.youtube.com/@BestEverFoodReviewShow" class="social-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="../about.html" class="social-link">Cultural Archive</a>
+          <a href="../contact.html" class="social-link">Community Inquiries</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
